@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>캐릭터 · 루미나의 파편들</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="characters">
+
+  <div class="page">
+    <header class="page-head">
+      <p class="eyebrow">Characters</p>
+      <h1>이야기 속 사람들</h1>
+      <p class="sub">세력을 골라 보거나, 카드를 눌러 더 알아보세요.</p>
+    </header>
+
+    <nav class="factabs" id="factabs" aria-label="세력별로 보기"></nav>
+    <div id="grid"></div>
+  </div>
+
+  <!-- 캐릭터 상세 팝업 -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="닫기">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
